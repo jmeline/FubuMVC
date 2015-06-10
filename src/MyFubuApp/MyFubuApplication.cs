@@ -20,6 +20,9 @@ namespace MyFubuApp
     {
         public MyFubuApplicationRegistry()
         {
+            Actions
+                .IncludeClassesSuffixedWithEndpoint();
+
             AlterSettings<DiagnosticsSettings>(x => x.TraceLevel = TraceLevel.Verbose);
             Services(x =>
             {

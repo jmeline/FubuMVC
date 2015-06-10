@@ -1,0 +1,4 @@
+﻿<viewdata model="MyFubuApp.Home.HomeViewModel" />
+<html>
+<p> Hello World ${Model.Name} </p>
+</html>
