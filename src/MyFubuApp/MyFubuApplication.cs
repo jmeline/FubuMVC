@@ -20,7 +20,11 @@ namespace MyFubuApp
     {
         public MyFubuApplicationRegistry()
         {
-
+            AlterSettings<DiagnosticsSettings>(x => x.TraceLevel = TraceLevel.Verbose);
+            Services(x =>
+            {
+                x.AddService<IRegistry, MyRegistry>();
+            });
         }        
     }
 
@@ -28,7 +32,6 @@ namespace MyFubuApp
     {
         public MyRegistry()
         {
-            For<IApplicationSource>().Use<MyFubuApplication>();
             
         }
     }
