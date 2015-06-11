@@ -10,11 +10,18 @@
             return new TodoViewModel();
         }
 
-        public AddItemModel post_AddItem(AddItemInputModel itemInputModel)
+        public TodoViewModel post_TodoApp(AddItemInputModel itemInputModel)
         {
-            return new AddItemModel();
+            return new TodoViewModel()
+            {
+                Task = itemInputModel.Task, 
+                Assignee = itemInputModel.Assignee,
+                IsCompleted = itemInputModel.IsCompleted
+            };
         }
- 
+
+
+
     }
 
     public class TodoImportModel
@@ -23,6 +30,9 @@
 
     public class TodoViewModel
     {
+        public string Assignee { get; set; }
+        public bool IsCompleted { get; set; }
+        public string Task { get; set; }
     }
 
     public class AddItemInputModel
@@ -32,8 +42,5 @@
         public string Task { get; set; }
     }
 
-    public class AddItemModel
-    {
-    }
-    
+
 }

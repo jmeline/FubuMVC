@@ -2,3 +2,15 @@
 <use master="Master"/>
 <use content="scripts"/>
 <p>Todo Program</p>
+<span class="p text-center">
+  <form action="/todoapp" method="post" accept-charset="utf-8">
+    <div class="input-group">
+      <input type="text" name="Task" class="form-control" placeholder="Add New Task Here">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default"> Add </button>
+        </span>
+      </div>
+  </form>
+</span>
+<p>${Model.Task}</p>
+
