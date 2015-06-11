@@ -1,14 +1,4 @@
 ﻿<viewdata model="MyFubuApp.EndPoints.TodoViewModel"/>
 <use master="Master"/>
-<content name="Navigation">
-  <ul class="nav navbar-nav">
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li class="active">
-      <a href="/todo/app">Todo</a>
-    </li>
-  </ul>
-</content>
 <use content="scripts"/>
 <p>Todo Program</p>
