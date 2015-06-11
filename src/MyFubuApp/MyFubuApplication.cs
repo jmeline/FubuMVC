@@ -1,6 +1,5 @@
 ﻿using FubuMVC.Core;
 using FubuMVC.StructureMap;
-using StructureMap;
 using StructureMap.Configuration.DSL;
 
 namespace MyFubuApp
@@ -22,6 +21,7 @@ namespace MyFubuApp
         {
             Actions
                 .IncludeClassesSuffixedWithEndpoint();
+
 
             AlterSettings<DiagnosticsSettings>(x => x.TraceLevel = TraceLevel.Verbose);
             Services(x =>
