@@ -38,6 +38,13 @@ namespace MyFubuApp.EndPoints
 
             return FubuContinuation.RedirectTo<TodoImportModel>();
         }
+
+        public FubuContinuation post_rm_Id(DeleteInputItemModel deleteInputItemModel)
+        {
+            _session.Delete("todos/" + deleteInputItemModel.Id);
+            _session.SaveChanges();
+            return FubuContinuation.RedirectTo<TodoImportModel>();
+        }
     }
 
     public class TodoImportModel
@@ -55,6 +62,7 @@ namespace MyFubuApp.EndPoints
 
     public class Todo
     {
+        public int Id { get; set; }
         public string Assignee { get; set; }
         public bool IsCompleted { get; set; }
         public string Task { get; set; }
@@ -66,6 +74,11 @@ namespace MyFubuApp.EndPoints
         public bool IsCompleted { get; set; }
         public string Task { get; set; }
         
+    }
+
+    public class DeleteInputItemModel
+    {
+        public int Id { get; set; }
     }
 
 

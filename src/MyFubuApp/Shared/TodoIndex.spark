@@ -6,16 +6,48 @@
   <form action="/addItem" method="post" accept-charset="utf-8">
     <div class="input-group">
       <input type="text" name="Task" class="form-control" placeholder="Add New Task Here"/>
-        <span class="input-group-btn">
-          <button type="submit" class="btn btn-default"> Add </button>
-        </span>
-      </div>
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-default"> Add </button>
+      </span>
+    </div>
   </form>
 </span>
 <hr />
-<ul class="list-group">
-  <li class="list-group-item" each="var todo in Model.Todos">
-    ${todo.Task}
-  </li>
-</ul>
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>IsCompleted</th>
+        <th>Assignee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <for each="var todo in Model.Todos">
+        <tr>
+          <td>${todo.Task}</td>
+          <td>${todo.IsCompleted}</td>
+          <td>${todo.Assignee}</td>
+        </tr>
+      </for>
+    </tbody>
+  </table>
+</div>
+<!--<ul class="list-group">-->
+<!--  <if condition="Model.Todos.Count == 0">-->
+<!--    <p>There aren't any tasks to do</p>-->
+<!--  </if>-->
+<!--  <else>-->
+<!--    <li class="list-group-item" each="var todo in Model.Todos">-->
+<!--      ${todo.Task}-->
+<!--      <span class="pull-right">-->
+<!--        <form action="/rm/${todo.Id}" method="post">-->
+<!--          <button>-->
+<!--            <span class="glyphicon glyphicon-remove-circle" style="color:red" />-->
+<!--          </button>-->
+<!--        </form>-->
+<!--      </span>-->
+<!--    </li>-->
+<!--  </else>-->
+<!--</ul>-->
 
