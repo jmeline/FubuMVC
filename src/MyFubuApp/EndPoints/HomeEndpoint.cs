@@ -1,4 +1,7 @@
-﻿namespace MyFubuApp.EndPoints
+﻿using Raven.Client;
+using StructureMap.Configuration.DSL;
+
+namespace MyFubuApp.EndPoints
 {
     /// <summary>
     /// Home page
