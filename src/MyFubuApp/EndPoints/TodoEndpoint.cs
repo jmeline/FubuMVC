@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using FubuMVC.Core.Continuations;
@@ -19,17 +20,26 @@ namespace MyFubuApp.EndPoints
 
         public TodoViewModel App(TodoImportModel model)
         {
-            var todos = _session.Query<Todo>()
-                .Customize(x => x.WaitForNonStaleResults())
-                .ToList();
-            return new TodoViewModel { Todos = todos };
+            try
+            {
+                var todos = _session.Query<Todo>()
+                    .Customize(x => x.WaitForNonStaleResults())
+                    .ToList();
+                return new TodoViewModel { Todos = todos };
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Turn on RavenDB stupid!");
+                throw;
+            }
+
         }
 
         public FubuContinuation post_addItem(AddItemInputModel itemInputModel)
         {
             _session.Store(new Todo
             {
-                Task = itemInputModel.Task, 
+                Task = itemInputModel.Task,
                 Assignee = itemInputModel.Assignee,
                 IsCompleted = itemInputModel.IsCompleted
             });
@@ -73,7 +83,7 @@ namespace MyFubuApp.EndPoints
         public string Assignee { get; set; }
         public bool IsCompleted { get; set; }
         public string Task { get; set; }
-        
+
     }
 
     public class DeleteInputItemModel

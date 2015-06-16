@@ -3,6 +3,7 @@
     <meta charset="utf-8"/>
       <title>Sample Title</title>
       <link href="~/Content/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	  <link href="~/Content/css/todo.css" rel="stylesheet" type="text/css" />
   </head>
   <div class="container">
     <nav class="navbar navbar-inverse">
