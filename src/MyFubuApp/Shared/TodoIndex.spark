@@ -6,7 +6,6 @@
   <Sidebar/>
   <NewTodoView/>
 </div>
-
 <hr />
 <div class="panel panel-primary">
   <div class="panel-heading">Existing Tasks</div>
@@ -17,30 +16,35 @@
         <tr>
           <th>Task</th>
           <th>Assignee</th>
-          <th>Options</th>
           <th>IsCompleted</th>
+          <th>Options</th>
         </tr>
       </thead>
       <tbody>
         <for each="var todo in Model.Todos">
           <tr>
-            <td>${todo.Task}</td>
-            <td>${todo.Assignee}</td>
-            <td>
-              <div class="btn-group">
-                <form action="/edit/${todo.Id}" method="post">
-                  <button type="submit" class="btn btn-primary pull-left">
-                    <i class="glyphicon glyphicon-pencil" style="color:white"></i>
-                  </button>
-                </form>
-                <form action="/rm/${todo.Id}" method="post">
-                  <button type="submit" class="btn btn-primary pull-right">
-                    <i class="glyphicon glyphicon-remove-sign" style="color:white"></i>
-                  </button>
-                </form>
-              </div>
-            </td>
-            <td>${todo.IsCompleted}</td>
+            <if condition="todo.Id == Model.EditingId">
+              <TodoEditForm item="todo"/>
+            </if>
+            <else>
+              <td>${todo.Task}</td>
+              <td>${todo.Assignee}</td>
+              <td>${todo.IsCompleted}</td>
+              <td>
+                <div class="btn-group">
+                  <form action="/edit/${todo.Id}" method="post">
+                    <button type="submit" class="btn btn-primary pull-left">
+                      <i class="glyphicon glyphicon-pencil" style="color:white"></i>
+                    </button>
+                  </form>
+                  <form action="/rm/${todo.Id}" method="post">
+                    <button type="submit" class="btn btn-primary pull-right">
+                      <i class="glyphicon glyphicon-remove-sign" style="color:white"></i>
+                    </button>
+                  </form>
+                </div>
+              </td>
+            </else>
           </tr>
         </for>
       </tbody>

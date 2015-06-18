@@ -112,6 +112,8 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\npm.js" />
     <Content Include="Global.asax" />
+    <Content Include="Shared\TodoEdit.spark" />
+    <None Include="Shared\_Sidebar.spark" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -138,7 +140,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Shared\TodoIndex.spark" />
-    <Content Include="Shared\NewTodoView.spark" />
+    <Content Include="Shared\_NewTodoView.spark">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Shared\_TodoEditForm.spark" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

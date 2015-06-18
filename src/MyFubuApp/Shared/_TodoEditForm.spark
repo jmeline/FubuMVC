@@ -1,0 +1,35 @@
+﻿<form action="/update" method="post" accept-charset="utf-8">
+<td>
+	<div class="form-group">
+		<div class="col-sm-12">
+		<input type="text" name="Task" class="form-control" id="task" />
+		</div>
+  </div>
+</td>
+<td>
+	<div class="form-group">
+		<div class="col-sm-12">
+		<input type="text" name="Assignee" class="form-control" id="Assignee" />
+		</div>
+	</div>
+</td>
+<td>
+	<div class="form-group">
+		<div class="col-sm-12">
+		<input type="checkbox" name="IsCompleted" id="IsCompleted" />
+		</div>
+	</div>
+</td>
+<td>
+	<div class="col-sm-12 btn-group">
+			<button type="submit" class="btn btn-primary pull-left">
+				<i class="glyphicon glyphicon-cloud-upload" style="color:white"/>
+			</button>
+		</form>
+		<form action="/todo/app" method="post">
+			<button type="submit" class="btn btn-primary pull-right">
+				<i class="glyphicon glyphicon-ban-circle" style="color:white"/>
+			</button>
+		</form>
+	</div>
+</td>

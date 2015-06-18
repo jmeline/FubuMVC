@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FubuMVC.Core;
 using FubuMVC.Core.Continuations;
 using Raven.Client;
 
@@ -25,7 +26,11 @@ namespace MyFubuApp.EndPoints
                 var todos = _session.Query<Todo>()
                     .Customize(x => x.WaitForNonStaleResults())
                     .ToList();
-                return new TodoViewModel { Todos = todos };
+                return new TodoViewModel
+                {
+                    EditingId = model.Id,
+                    Todos = todos
+                };
             }
             catch (Exception)
             {
@@ -49,6 +54,15 @@ namespace MyFubuApp.EndPoints
             return FubuContinuation.RedirectTo<TodoImportModel>();
         }
 
+        public FubuContinuation post_edit_Id(EditInputItemModel itemInputModel)
+        {
+            Todo edited_todo = _session.Load<Todo>("todos/" + itemInputModel.Id);
+            return FubuContinuation.RedirectTo(new TodoImportModel
+            {
+                Id = itemInputModel.Id
+            });
+        }
+
         public FubuContinuation post_rm_Id(DeleteInputItemModel deleteInputItemModel)
         {
             _session.Delete("todos/" + deleteInputItemModel.Id);
@@ -59,11 +73,16 @@ namespace MyFubuApp.EndPoints
 
     public class TodoImportModel
     {
+        [QueryString]
+        public int? Id { get; set; }
     }
 
     public class TodoViewModel
     {
         public IList<Todo> Todos { get; set; }
+        public int? Id { get; set; }
+        public int? EditingId { get; set; }
+
         public TodoViewModel()
         {
             Todos = new List<Todo>();
@@ -83,13 +102,19 @@ namespace MyFubuApp.EndPoints
         public string Assignee { get; set; }
         public bool IsCompleted { get; set; }
         public string Task { get; set; }
-
     }
 
     public class DeleteInputItemModel
     {
         public int Id { get; set; }
+
     }
+
+    public class EditInputItemModel
+    {
+        public int Id { get; set; }
+    }
+
 
 
 }
