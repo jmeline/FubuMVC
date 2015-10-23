@@ -69,6 +69,18 @@ namespace MyFubuApp.EndPoints
             _session.SaveChanges();
             return FubuContinuation.RedirectTo<TodoImportModel>();
         }
+
+        public FubuContinuation post_update_Id(UpdateInputItemModel updateInputItemModel)
+        {
+            var edited_todo = _session.Load<Todo>("todos/" + updateInputItemModel.Id);
+
+            edited_todo.Task = updateInputItemModel.Task;
+            edited_todo.IsCompleted = updateInputItemModel.IsCompleted;
+            edited_todo.Assignee = updateInputItemModel.Assignee;
+
+            _session.SaveChanges();
+            return FubuContinuation.RedirectTo<TodoImportModel>();
+        }
     }
 
     public class TodoImportModel
@@ -115,6 +127,13 @@ namespace MyFubuApp.EndPoints
         public int Id { get; set; }
     }
 
+    public class UpdateInputItemModel
+    { 
+        public int Id { get; set; }
+        public string Assignee { get; set; }
+        public bool IsCompleted { get; set; }
+        public string Task { get; set; }
+    }
 
 
 }

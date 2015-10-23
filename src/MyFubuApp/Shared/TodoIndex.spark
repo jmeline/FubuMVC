@@ -3,7 +3,7 @@
 <use content="scripts"/>
 <!-- start of site -->
 <div class="row">
-  <Sidebar/>
+  <!--<Sidebar/>-->
   <NewTodoView/>
 </div>
 <hr />

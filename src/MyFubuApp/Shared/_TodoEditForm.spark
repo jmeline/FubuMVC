@@ -1,35 +1,35 @@
-﻿<form action="/update" method="post" accept-charset="utf-8">
+﻿<form action="/update/${todo.Id}" method="post" accept-charset="utf-8">
 <td>
 	<div class="form-group">
 		<div class="col-sm-12">
-		<input type="text" name="Task" class="form-control" id="task" />
+		<input type="text" name="Task" class="form-control" id="task" value="${todo.Task}"/>
 		</div>
   </div>
 </td>
 <td>
 	<div class="form-group">
 		<div class="col-sm-12">
-		<input type="text" name="Assignee" class="form-control" id="Assignee" />
+		<input type="text" name="Assignee" class="form-control" id="Assignee" value="${todo.Assignee}"/>
 		</div>
 	</div>
 </td>
 <td>
 	<div class="form-group">
 		<div class="col-sm-12">
-		<input type="checkbox" name="IsCompleted" id="IsCompleted" />
+		<input type="checkbox" name="IsCompleted" id="IsCompleted" value="${todo.IsCompleted}"/>
 		</div>
 	</div>
 </td>
 <td>
-	<div class="col-sm-12 btn-group">
+	<div class="btn-group">
 			<button type="submit" class="btn btn-primary pull-left">
-				<i class="glyphicon glyphicon-cloud-upload" style="color:white"/>
+				<i class="glyphicon glyphicon-ok" style="color:white"/>
 			</button>
-		</form>
-		<form action="/todo/app" method="post">
-			<button type="submit" class="btn btn-primary pull-right">
-				<i class="glyphicon glyphicon-ban-circle" style="color:white"/>
-			</button>
-		</form>
-	</div>
+		<!--</form>-->
+		<!--<form action="/todo/app" method="post">-->
+			<!--<button type="submit" class="btn btn-primary pull-right">
+				<i class="glyphicon glyphicon-remove-sign" style="color:white"/>
+			</button>-->
+    </div>
+  </form>
 </td>
