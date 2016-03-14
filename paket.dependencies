@@ -1,0 +1,12 @@
+framework: >= net45
+source https://nuget.org/api/v2
+
+nuget HtmlTags 3.0.0.186
+nuget Newtonsoft.Json 4.5.9
+nuget xunit 2.1.0
+nuget xunit.runner.utility 2.1.0
+nuget xunit.runner.console 2.1.0
+nuget structuremap 4.0.0.272-alpha
+nuget FubuMVC.Core 3.0.0.2156-alpha
+nuget FubuCore 2.0.0.311
+nuget Shouldly 2.6.0
