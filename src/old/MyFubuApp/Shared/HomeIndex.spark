@@ -1,4 +1,0 @@
-﻿<viewdata model="MyFubuApp.EndPoints.HomeViewModel"/>
-<use master="Master"/>
-<use content="scripts"/>
-<p> Hello FubuWorld ${Model.Name} </p>
