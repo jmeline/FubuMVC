@@ -1,0 +1,7 @@
+#!/usr/bin/python
+import subprocess
+import os
+
+print ("Setup")
+paketLocation = os.path.join('.', '.paket', 'paket.bootstrapper.exe')
+subprocess.call(["mono", paketLocation])
