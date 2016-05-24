@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IoC.Tests2")]
+[assembly: AssemblyTitle("IoC.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Towers Watson")]
-[assembly: AssemblyProduct("IoC.Tests2")]
+[assembly: AssemblyProduct("IoC.Tests")]
 [assembly: AssemblyCopyright("Copyright © Towers Watson 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

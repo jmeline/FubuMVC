@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fubu3TodoApp.StoryTeller", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{D1CA2445-ADD0-482D-AFEC-720439BE5841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.Tests", "IoC.Tests2\IoC.Tests.csproj", "{DC0FA79D-5F76-48C6-90D4-2A193E1CC3D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.Tests", "IoC.Tests\IoC.Tests.csproj", "{DC0FA79D-5F76-48C6-90D4-2A193E1CC3D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
