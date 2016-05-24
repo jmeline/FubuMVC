@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fubu3TodoApp", "Fubu3TodoAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fubu3TodoApp.StoryTeller", "Fubu3TodoApp.StoryTeller\Fubu3TodoApp.StoryTeller.csproj", "{CEE9D2B6-BC98-443D-8E11-966548DDE981}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{D1CA2445-ADD0-482D-AFEC-720439BE5841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CEE9D2B6-BC98-443D-8E11-966548DDE981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEE9D2B6-BC98-443D-8E11-966548DDE981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEE9D2B6-BC98-443D-8E11-966548DDE981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CA2445-ADD0-482D-AFEC-720439BE5841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CA2445-ADD0-482D-AFEC-720439BE5841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CA2445-ADD0-482D-AFEC-720439BE5841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CA2445-ADD0-482D-AFEC-720439BE5841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

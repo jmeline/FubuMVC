@@ -1,4 +1,6 @@
-﻿namespace IoC
+﻿using System;
+
+namespace IoC
 {
     public class Program
     {
@@ -8,7 +10,6 @@
             //   High level Pattern that can be applied in different ways to invert different kinds of control
 
             // Dependancy Injection
-            //
 
             // *******************************
             //      Manual Dependancy 
@@ -42,6 +43,7 @@
             resolver.Register<ICreditCard, Visa>();
             var shopper = resolver.Resolve<Shopper>();
             shopper.Charge();
+            Console.Read();
 
         }
     }
