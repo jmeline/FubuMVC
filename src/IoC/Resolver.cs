@@ -6,22 +6,22 @@ namespace IoC
 {
     public class Resolver
     {
-//        public ICreditCard ResolveCreditCard()
-//        {
-//            if (new Random().Next(2) == 1)
-//                return new Visa();
-//            return new MasterCard();
-//        }
-        
+        // public ICreditCard ResolveCreditCard()
+        // {
+        //     if (new Random().Next(2) == 1)
+        //         return new Visa();
+        //     return new MasterCard();
+        // }
+
         private readonly Dictionary<Type, Type> _dependancyMap = new Dictionary<Type, Type>();
         public T Resolve<T>()
         {
             return (T) Resolve(typeof(T));
         }
 
-        public void Register<TFrom, TTo>()
+        public void Register<TContract, TImplementation>()
         {
-            _dependancyMap.Add(typeof(TFrom), typeof(TTo));
+            _dependancyMap.Add(typeof(TContract), typeof(TImplementation));
         }
 
         private object Resolve(Type typeToResolve)
@@ -38,18 +38,13 @@ namespace IoC
 
             var firstConstructor = resolveType.GetConstructors().First();
             var constructorParameters = firstConstructor.GetParameters();
-            if (constructorParameters.Length == 0)
-            {
-                return Activator.CreateInstance(resolveType);
-            }
-
-            IList<object> parameters = new List<object>();
-            foreach (var parameter in constructorParameters)
-            {
-                parameters.Add(Resolve(parameter.ParameterType));
-            }
-
-            return firstConstructor.Invoke(parameters.ToArray());
+            if (constructorParameters.Length != 0)
+                return firstConstructor.Invoke(
+                    constructorParameters.Select(
+                        parametersInfo => Resolve(parametersInfo.ParameterType)
+                    ).ToArray()
+                );
+            return Activator.CreateInstance(resolveType);
         }
 
     }

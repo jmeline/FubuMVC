@@ -16,5 +16,10 @@ namespace IoC
             var chargeMessage = _creditCard.Charge();
             Console.WriteLine(chargeMessage);
         }
+
+        public string GetCardName()
+        {
+            return _creditCard.CardName;
+        }
     }
 }
