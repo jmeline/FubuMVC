@@ -1,1 +1,2 @@
-require('font-awesome/css/font-awesome.min.css');
+require('bootstrap/less/bootstrap.less');
+// require('bootstrap/css/bootstrap.css');

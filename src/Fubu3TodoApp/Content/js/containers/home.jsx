@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../components/navigation.jsx';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -7,7 +8,10 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div> Home </div>
+      <div>
+        <Navigation />
+        Home
+      </div>
     );
   }
 }
