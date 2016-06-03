@@ -7,7 +7,7 @@ export default class HomePage extends React.Component {
 
   render() {
     return (
-      <div className="bordered">
+      <div className="container bordered">
         <p> Eat owner's food </p>
         <p> Attack feet chirp at birds. Intently sniff hand pelt around the house and up and down stairs chasing phantoms or brown cats with pink ears and play riveting piece on synthesizer keyboard, the dog smells bad for attack feet. Scream at teh bath see owner, run in terror give attitude. Intrigued by the shower sit in box, if it fits, i sits for lick the plastic bag. Spread kitty litter all over house meowwww yet sleep on dog bed, force dog to sleep on floor jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed, meow all night having their mate disturbing sleeping humans spread kitty litter all over house. Chase mice russian blue chew on cable lie on your belly and purr when you are asleep find empty spot in cupboard and sleep all day spread kitty litter all over house for purr while eating. Curl into a furry donut scratch at the door then walk away. </p>
 

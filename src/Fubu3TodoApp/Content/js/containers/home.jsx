@@ -9,12 +9,10 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div className="mainTheme">
+      <div>
         <Navigation />
         <HomePage />
-        <HomePage />
-        <a href="#" > stuff </a>
-</div>
+      </div>
     );
   }
 }
