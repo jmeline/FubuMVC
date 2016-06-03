@@ -1,2 +1,7 @@
 require('bootstrap/less/bootstrap.less');
-// require('bootstrap/css/bootstrap.css');
+
+// custom styles
+require('../less/general.less');
+require('../less/navigation.less');
+require('../less/home.less');
+

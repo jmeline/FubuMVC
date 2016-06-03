@@ -1,0 +1,22 @@
+@import 'variables';
+
+.navbarTheme {
+  padding: 15px;
+  background: @darkest-hue;
+
+  a {
+    color: @light-hue;
+    &:hover, &:focus {
+      color: @light-hue;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbarFixedTop {
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}

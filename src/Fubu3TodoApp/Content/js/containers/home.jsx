@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../components/navigation.jsx';
+import HomePage from '../components/homePage.jsx';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -8,10 +9,12 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="mainTheme">
         <Navigation />
-        Home
-      </div>
+        <HomePage />
+        <HomePage />
+        <a href="#" > stuff </a>
+</div>
     );
   }
 }

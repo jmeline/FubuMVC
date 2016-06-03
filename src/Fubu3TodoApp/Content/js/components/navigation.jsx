@@ -10,17 +10,9 @@ export default class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar inverse>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#">TW-TODO</a>
-          </Navbar.Brand>
-        </Navbar.Header>
-        <Nav>
-          <NavItem href="#"> Link1 </NavItem>
-          <NavItem href="#"> Link2 </NavItem>
-        </Nav>
-      </Navbar>
+      <div className="navbarTheme navbarFixedTop">
+        <a href="#" > TW-TODO </a>
+      </div>
     );
   }
 }
