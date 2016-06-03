@@ -11,7 +11,12 @@ namespace Fubu3TodoApp.Settings
         public FubuTodoRegistry()
         {
             Features.Diagnostics.Enable(TraceLevel.Verbose);
-            Actions.IncludeClassesSuffixedWithEndpoint();
+
+            Actions.FindBy(a =>
+            {
+                a.Applies.ToThisAssembly();
+                a.IncludeClassesSuffixedWithEndpoint();
+            });
 
             Policies.Global.Add<SamplePolicy>();
 

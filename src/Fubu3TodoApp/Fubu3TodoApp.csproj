@@ -54,6 +54,10 @@
     <Reference Include="FubuMVC.Core">
       <HintPath>..\..\packages\FubuMVC.Core\lib\net45\FubuMVC.Core.dll</HintPath>
     </Reference>
+    <Reference Include="FubuMVC.Razor, Version=3.0.0.2240, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\FubuMVC.Razor\lib\net45\FubuMVC.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlTags">
       <HintPath>..\..\packages\HtmlTags\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
@@ -71,6 +75,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -78,6 +83,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Home\Home.cshtml" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,10 +100,11 @@
   <ItemGroup>
     <Compile Include="Behaviors\SayGoodbye.cs" />
     <Compile Include="Behaviors\SayHello.cs" />
-    <Compile Include="Endpoints\HomeEndpoint.cs" />
+    <Compile Include="Home\HomeEndpoint.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\FubuTodoRegistry.cs" />
   </ItemGroup>
