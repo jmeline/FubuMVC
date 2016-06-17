@@ -1,4 +1,5 @@
 ﻿using System;
+using StructureMap;
 
 namespace IoC
 {
@@ -35,16 +36,27 @@ namespace IoC
             // Console.Read();
 
             // *******************************
-            //      Container
+            //      My own Container
             // *******************************
 
-            var resolver = new Resolver();
-            resolver.Register<Shopper, Shopper>();
-            resolver.Register<ICreditCard, Visa>();
-            var shopper = resolver.Resolve<Shopper>();
+            //var resolver = new Resolver();
+            //resolver.Register<Shopper, Shopper>();
+            //resolver.Register<ICreditCard, Visa>();
+            //var shopper = resolver.Resolve<Shopper>();
+            //shopper.Charge();
+
+            // *******************************
+            //      StructureMap
+            // *******************************
+            var container = new Container(_ =>
+            {
+                _.For<ICreditCard>().Use<MasterCard>();
+                _.For<Shopper>().Use<Shopper>();
+            });
+
+            var shopper = container.GetInstance<Shopper>();
             shopper.Charge();
             Console.Read();
-
         }
     }
 }

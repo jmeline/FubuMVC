@@ -48,9 +48,6 @@
     <Reference Include="FubuCore">
       <HintPath>..\..\packages\FubuCore\lib\FubuCore.dll</HintPath>
     </Reference>
-    <Reference Include="FubuLocalization">
-      <HintPath>..\..\packages\FubuLocalization\lib\FubuLocalization.dll</HintPath>
-    </Reference>
     <Reference Include="FubuMVC.Core">
       <HintPath>..\..\packages\FubuMVC.Core\lib\net45\FubuMVC.Core.dll</HintPath>
     </Reference>
@@ -75,7 +72,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -93,7 +89,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Index.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -28,6 +28,7 @@ namespace Fubu3TodoApp.Settings
     {
         public void Configure(BehaviorGraph graph)
         {
+            
             foreach (var action in graph.Actions())
             {
                 if (action.Method.DeclaringType != null &&
