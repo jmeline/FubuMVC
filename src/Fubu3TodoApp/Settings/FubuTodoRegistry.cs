@@ -1,4 +1,5 @@
-﻿using Fubu3TodoApp.Behaviors;
+﻿using System.Globalization;
+using Fubu3TodoApp.Behaviors;
 using FubuMVC.Core;
 using FubuMVC.Core.Registration;
 using FubuMVC.Core.Registration.Nodes;
@@ -11,6 +12,13 @@ namespace Fubu3TodoApp.Settings
         public FubuTodoRegistry()
         {
             Features.Diagnostics.Enable(TraceLevel.Verbose);
+
+            // Setup Localization
+            Features.Localization.Enable(true);
+            Features.Localization.Configure(_ =>
+            {
+                _.DefaultCulture = new CultureInfo("en-US");
+            });
 
             Actions.FindBy(a =>
             {

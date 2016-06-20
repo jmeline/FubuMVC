@@ -1,4 +1,4 @@
-namespace Fubu3TodoApp.Home
+namespace Fubu3TodoApp.Endpoints.Home
 {
     public class HomeViewModel
     {
