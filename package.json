@@ -44,6 +44,7 @@
     "less-loader": "^2.2.2",
     "postcss-loader": "^0.8.0",
     "style-loader": "^0.13.1",
+    "superagent": "^2.0.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1"
   }

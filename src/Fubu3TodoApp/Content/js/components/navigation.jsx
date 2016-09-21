@@ -13,8 +13,8 @@ export default class Navigation extends React.Component {
     return (
       <div className="navbarTheme navbarFixedTop">
         <ul>
-          <li> <Link to="/">TW-TODO</Link> </li>
-          <li> <Link to="/todo">Todo</Link> </li>
+          <li><Link to="/">TW-TODO</Link></li>
+          <li><Link to="/todo">Todo</Link></li>
         </ul>
       </div>
     );

@@ -4,6 +4,7 @@ source https://nuget.org/api/v2
 nuget FubuCore 2.0.1.321
 nuget FubuMVC.Core 3.0.0.2240-alpha
 nuget FubuMVC.Razor 3.0.0.2240-alpha
+nuget Bottles 2.2.0.610
 nuget Newtonsoft.Json 4.5.9
 nuget Shouldly 2.6.0
 nuget Storyteller 3.0.0.333-rc -pre

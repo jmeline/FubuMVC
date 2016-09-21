@@ -59,6 +59,10 @@
       <HintPath>..\..\packages\HtmlTags\lib\4.0\HtmlTags.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\..\packages\structuremap\lib\portable-net45+win+wp81\StructureMap.dll</HintPath>
     </Reference>
@@ -105,7 +109,11 @@
   <ItemGroup>
     <Compile Include="Behaviors\SayGoodbye.cs" />
     <Compile Include="Behaviors\SayHello.cs" />
+    <Compile Include="Endpoints\Food\FoodEndpoint.cs" />
+    <Compile Include="Endpoints\Food\FoodViewModel.cs" />
     <Compile Include="Endpoints\Home\HomeEndpoint.cs" />
+    <Compile Include="Endpoints\Todo\TodoEndpoint.cs" />
+    <Compile Include="Endpoints\Todo\TodoViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -113,9 +121,9 @@
     <Compile Include="Localization\Food.cs" />
     <Compile Include="Localization\FoodDescriptionToken.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\FubuJsonSerializationSettings.cs" />
     <Compile Include="Settings\FubuTodoRegistry.cs" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

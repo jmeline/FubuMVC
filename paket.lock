@@ -1,7 +1,8 @@
 FRAMEWORK: >= NET45
 NUGET
   remote: https://www.nuget.org/api/v2
-  specs:
+    Bottles (2.2.0.610)
+      FubuCore (>= 1.0.0.210)
     FubuCore (2.0.1.321)
     FubuMVC.Core (3.0.0.2240-alpha)
       FubuCore (>= 2.0)

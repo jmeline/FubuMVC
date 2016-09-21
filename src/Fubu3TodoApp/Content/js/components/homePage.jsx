@@ -5,6 +5,10 @@ export default class HomePage extends React.Component {
     super(props);
   }
 
+  componentWillMount(){
+    console.log('componentWillMount');
+  }
+
   render() {
     return (
       <div className="container bordered">

@@ -26,10 +26,10 @@ namespace Fubu3TodoApp.Settings
                 a.IncludeClassesSuffixedWithEndpoint();
             });
 
-            Policies.Global.Add<SamplePolicy>();
-
-            StructureMap(new Container(new FubuTodoStructureMapRegistry()));
+            Policies.Local.Add<SamplePolicy>();
+            Policies.Local.Add<FubuJsonSerializationSettings>();
         }
+
     }
 
     public class SamplePolicy : IConfigurationAction
