@@ -1,4 +1,4 @@
-framework: >= net45
+framework: net46
 source https://nuget.org/api/v2
 
 nuget FubuCore >= 2.0.1.321

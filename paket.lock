@@ -1,4 +1,4 @@
-FRAMEWORK: >= NET45
+FRAMEWORK: NET46
 NUGET
   remote: https://www.nuget.org/api/v2
     Bottles (2.2.0.610)
