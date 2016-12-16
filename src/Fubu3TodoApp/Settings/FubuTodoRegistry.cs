@@ -3,7 +3,6 @@ using Fubu3TodoApp.Behaviors;
 using FubuMVC.Core;
 using FubuMVC.Core.Registration;
 using FubuMVC.Core.Registration.Nodes;
-using StructureMap;
 
 namespace Fubu3TodoApp.Settings
 {
@@ -47,14 +46,6 @@ namespace Fubu3TodoApp.Settings
                     action.AddBefore(new Wrapper(typeof (SayGoodbye)));
                 }
             }
-        }
-    }
-
-    public class FubuTodoStructureMapRegistry : Registry
-    {
-        public FubuTodoStructureMapRegistry()
-        {
-            Scan(x => { x.WithDefaultConventions(); });
         }
     }
 }
