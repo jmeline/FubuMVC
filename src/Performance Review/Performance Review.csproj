@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharp_keywords\Default.cs" />
     <Compile Include="CSharp_keywords\Params.cs" />
     <Compile Include="CSharp_topics\CovarianceAndContravariance\CovarianceAndContravariance.cs" />
     <Compile Include="Program.cs" />

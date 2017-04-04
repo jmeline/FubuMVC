@@ -22,8 +22,6 @@ namespace IoC
             // ICreditCard otherCreditCard = new Visa();
             // var shopper = new Shopper(otherCreditCard);
             // shopper.Charge();
-            //
-            // Console.Read();
 
             // *******************************
             //      Resolving Dependancies
@@ -32,8 +30,6 @@ namespace IoC
             // Resolver resolver = new Resolver();
             // var shopper = new Shopper(resolver.ResolveCreditCard());
             // shopper.Charge();
-            //
-            // Console.Read();
 
             // *******************************
             //      My own Container

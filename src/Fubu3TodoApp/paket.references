@@ -1,5 +1,6 @@
 FubuCore
 FubuMVC.Core
 FubuMVC.Razor
+Microsoft.AspNet.Razor
 Newtonsoft.Json
 structuremap
