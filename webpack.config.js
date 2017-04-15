@@ -1,14 +1,13 @@
-import path from 'path';
-import webpack from 'webpack';
-const scriptsDir = path.join(__dirname, './src/Fubu3TodoApp/Content/js');
-const main = path.join(scriptsDir, 'app.jsx');
-const styles = path.join(scriptsDir, 'styles.js');
-const outputDir = '/src/Fubu3TodoApp/dist/';
+var path = require('path');
+var webpack = require('webpack');
+var scriptsDir = path.join(__dirname, './src/Fubu3TodoApp/Content/js');
+var main = path.join(scriptsDir, 'App.js');
+//const styles = path.join(scriptsDir, 'styles.js');
+var outputDir = '/src/Fubu3TodoApp/dist/';
 
-export default {
+module.exports = {
   entry: {
-    main,
-    styles
+    main
   },
   output: {
     path: path.join(__dirname, outputDir),
@@ -28,4 +27,3 @@ export default {
     ]
   },
 };
-
