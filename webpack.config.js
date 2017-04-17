@@ -1,8 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var scriptsDir = path.join(__dirname, './src/Fubu3TodoApp/Content/js');
-var main = path.join(scriptsDir, 'App.js');
-//const styles = path.join(scriptsDir, 'styles.js');
+var main = path.join(scriptsDir, 'index.js');
 var outputDir = '/src/Fubu3TodoApp/dist/';
 
 module.exports = {

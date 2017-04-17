@@ -1,4 +1,3 @@
-
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import { blue500, orange500 } from 'material-ui/TextField';
@@ -20,10 +19,6 @@ export default class TodoInput extends React.Component {
       textValue: ""
     };
   }
-
-  static propTypes = {
-    onChange: React.PropTypes.func
-  };
 
   _handleTextFieldChange = (e) => {
     this.setState({

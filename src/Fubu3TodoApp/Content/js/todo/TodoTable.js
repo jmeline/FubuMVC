@@ -8,7 +8,6 @@ import ModeEdit from 'material-ui/svg-icons/editor/mode-edit';
 
 
 export default class TodoTable extends React.Component {
-
   constructor(props){
     super(props);
     this.state = {

@@ -8,7 +8,6 @@ import '../App.css';
 const darkMuiTheme = getMuiTheme();
 
 class App extends Component {
-
   render() {
     return (
       <MuiThemeProvider

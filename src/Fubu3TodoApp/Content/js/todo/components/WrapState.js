@@ -1,12 +1,14 @@
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+//import PropTypes from 'prop-types';
 
 function wrapState(ComposedComponent) {
   return class SelectableList extends Component {
-    static propTypes = {
+    /*static PropTypes = {
       children: PropTypes.node.isRequired,
       defaultValue: PropTypes.number.isRequired,
     };
+    */
 
     componentWillMount() {
       this.setState({
