@@ -150,6 +150,9 @@
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3')">
       <ItemGroup>
+        <Reference Include="System.Security">
+          <Paket>True</Paket>
+        </Reference>
         <Reference Include="FubuMVC.Core">
           <HintPath>..\..\packages\FubuMVC.Core\lib\net46\FubuMVC.Core.dll</HintPath>
           <Private>True</Private>

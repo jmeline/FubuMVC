@@ -4,11 +4,11 @@ NUGET
     Bottles (2.2.0.610)
       FubuCore (>= 1.0.0.210)
     FubuCore (2.0.1.321)
-    FubuMVC.Core (3.0.1.2355)
-      FubuCore (>= 2.0)
-      HtmlTags (2.1.0.183)
-      Newtonsoft.Json (9.0.1)
-      structuremap (>= 4.4)
+    FubuMVC.Core (3.0.2)
+      FubuCore (>= 2.0.1.321) - framework: >= net46
+      HtmlTags (>= 2.1.0.183) - framework: >= net46
+      Newtonsoft.Json (>= 9.0.1) - framework: >= net46
+      structuremap (>= 4.4.3) - framework: >= net46
     FubuMVC.Razor (3.0.1.2355)
       FubuMVC.Core (>= 3.0)
       Microsoft.AspNet.Razor (>= 2.0.20715)
@@ -17,7 +17,7 @@ NUGET
     Newtonsoft.Json (9.0.1)
     Shouldly (2.6)
     Storyteller (3.0.1)
-    structuremap (4.4.2)
+    structuremap (4.4.5)
     xunit (2.2)
       xunit.assert (2.2)
       xunit.core (2.2)

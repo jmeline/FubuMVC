@@ -8,13 +8,21 @@ export default class TodoList extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      open: false
+      open: false,
+      selected: {
+        todo: null,
+        id: null,
+        timeStamp: null
+      }
     };
   }
 
   _handleDrawerOpen = (x) => {
-    console.log(x);
-    this.setState({ open: !this.setState.open });
+    console.log(x, this.state.open);
+    this.setState({ 
+      open: !this.setState.open,
+      selected: x
+     });
   };
 
   render() {
@@ -28,7 +36,7 @@ export default class TodoList extends React.Component {
           width={350}
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}>
-          <TodoEdit />
+          <TodoEdit model={this.state.selected}/>
         </Drawer>
       </div>
     );

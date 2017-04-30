@@ -77,6 +77,9 @@
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3')">
       <ItemGroup>
+        <Reference Include="System.Security">
+          <Paket>True</Paket>
+        </Reference>
         <Reference Include="System.Web">
           <Paket>True</Paket>
         </Reference>

@@ -10,6 +10,7 @@ namespace Fubu3TodoApp.Settings
     {
         public FubuTodoRegistry()
         {
+            // Enables Diagnostic page
             Features.Diagnostics.Enable(TraceLevel.Verbose);
 
             // Setup Localization
@@ -18,11 +19,16 @@ namespace Fubu3TodoApp.Settings
             {
                 _.DefaultCulture = new CultureInfo("en-US");
             });
-
+            
             Actions.FindBy(a =>
             {
                 a.Applies.ToThisAssembly();
-                a.IncludeClassesSuffixedWithEndpoint();
+                // Endpoint is defaulted
+                //a.IncludeClassesSuffixedWithEndpoint();
+
+                // Flexibility to change 
+                a.IncludeTypesNamed(x => x.EndsWith("example"));
+                a.IncludeClassesSuffixedWithController();
             });
 
             Policies.Local.Add<SamplePolicy>();
@@ -35,11 +41,9 @@ namespace Fubu3TodoApp.Settings
     {
         public void Configure(BehaviorGraph graph)
         {
-            
             foreach (var action in graph.Actions())
             {
-                if (action.Method.DeclaringType != null &&
-                    action.Method.DeclaringType.Name == "HomeEndpoint")
+                if (action.Method.DeclaringType != null && action.Method.DeclaringType.Name == "HomeEndpoint")
                 {
                     var parameters = action.Method.GetParameters();
                     action.AddBefore(new Wrapper(typeof (SayHello)));

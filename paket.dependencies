@@ -2,14 +2,15 @@ framework: >= net45
 source https://nuget.org/api/v2
 
 nuget FubuCore 2.0.1.321
-nuget FubuMVC.Core 3.0.1.2355
+nuget FubuMVC.Core 3.0.2
 nuget FubuMVC.Razor 3.0.1.2355
+nuget HtmlTags 2.1.0.183
 nuget Microsoft.AspNet.Razor 2.0.30506
 nuget Bottles 2.2.0.610
 nuget Newtonsoft.Json 9.0.1
 nuget Shouldly 2.6.0
 nuget Storyteller 3.0.1
-nuget structuremap 4.4.2
+nuget structuremap 4.4.5
 nuget xunit 2.2.0
 nuget xunit.runner.console 2.2.0
 nuget xunit.runner.utility 2.2.0
