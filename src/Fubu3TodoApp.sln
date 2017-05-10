@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fubu3TodoApp", "Fubu3TodoApp\Fubu3TodoApp.csproj", "{0E7F54C2-2961-4D60-B878-909D48E7CF08}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance Review", "Performance Review\Performance Review.csproj", "{50A88737-D05B-423F-B7D5-A79DBF0AA338}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bottles", "Bottles\Bottles.csproj", "{C671AD1C-5F80-4574-8D8E-A55724E6B005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Language", "CSharp_Language\CSharp_Language.csproj", "{06253122-525F-4BD4-B71E-E3C125F86658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{C671AD1C-5F80-4574-8D8E-A55724E6B005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C671AD1C-5F80-4574-8D8E-A55724E6B005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C671AD1C-5F80-4574-8D8E-A55724E6B005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06253122-525F-4BD4-B71E-E3C125F86658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06253122-525F-4BD4-B71E-E3C125F86658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06253122-525F-4BD4-B71E-E3C125F86658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06253122-525F-4BD4-B71E-E3C125F86658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ NUGET
     HtmlTags (2.1.0.183)
     Microsoft.AspNet.Razor (2.0.30506)
     Newtonsoft.Json (9.0.1)
-    Shouldly (2.6)
+    Shouldly (2.8.2)
     Storyteller (3.0.1)
     structuremap (4.4.5)
     xunit (2.2)
