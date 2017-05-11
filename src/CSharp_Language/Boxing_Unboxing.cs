@@ -48,7 +48,7 @@ namespace CSharp_Language
             // p is located in a separate space on the heap than
             // @object 
             ((Point)@object).x.ShouldBe(10); 
-            p.x.ShouldBe(10);
+            p.x.ShouldBe(20);
             // Doing something like this won't work because boxing makes a copy
             //((Point) @object).x = 20;
             // Unboxing it by casting it back to Point creates another copy.
