@@ -6,6 +6,7 @@ nuget FubuMVC.Core 3.0.2
 nuget FubuMVC.Razor 3.0.1.2355
 nuget HtmlTags 2.1.0.183
 nuget Microsoft.AspNet.Razor 2.0.30506
+nuget Moq
 nuget Bottles 2.2.0.610
 nuget Newtonsoft.Json 9.0.1
 nuget Shouldly 
