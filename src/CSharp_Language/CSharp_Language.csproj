@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BooleanLogic.cs" />
     <Compile Include="Boxing_Unboxing.cs" />
     <Compile Include="Fundamentals\Class_Struct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Testing\Stub\Fib\FibTester.cs" />
     <Compile Include="Testing\Stub\Fib\IFib.cs" />
     <Compile Include="Testing\Stub\MailSender\AddressBookTest.cs" />
+    <Compile Include="StringInterpolation.cs" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
