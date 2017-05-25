@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Shouldly;
 using Xunit;
 
@@ -19,11 +18,6 @@ namespace CSharp_Language.Solid_Principles.Open_Closed_Principle
 
     public class AreaCalculator
     {
-        public double Area(List<Rectangle> shapes)
-        {
-            return shapes.Sum(x => x.Width * x.Height);
-        }
-
         public double Areas(List<object> shapes)
         {
             // unfortunately this isn't closed for modification
@@ -74,27 +68,6 @@ namespace CSharp_Language.Solid_Principles.Open_Closed_Principle
         {
             var tolerance = Math.Abs(result * .0001);
             return Math.Abs(result - expected) <= tolerance;
-        }
-
-        [Fact]
-        public void TestingAreaCalculator()
-        {
-            var calculator = new AreaCalculator();
-            const double expectedResult = 4986.024d;
-            var result = calculator.Area(new List<Rectangle>
-            {
-                new Rectangle { Width = 10,   Height = 15 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-                new Rectangle { Width = 15.3, Height = 35.12 },
-            });
-            CheckResult(result, expectedResult).ShouldBeTrue();
         }
     }
 }

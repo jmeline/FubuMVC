@@ -49,6 +49,7 @@ namespace CSharp_Language
             // @object 
             ((Point)@object).x.ShouldBe(10); 
             p.x.ShouldBe(20);
+            ((Point)@object).ShouldNotBeSameAs(p);
             // Doing something like this won't work because boxing makes a copy
             //((Point) @object).x = 20;
             // Unboxing it by casting it back to Point creates another copy.
