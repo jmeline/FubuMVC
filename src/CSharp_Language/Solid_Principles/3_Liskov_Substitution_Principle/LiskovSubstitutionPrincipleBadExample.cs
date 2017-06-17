@@ -7,58 +7,23 @@ namespace CSharp_Language.Solid_Principles._3_Liskov_Substitution_Principle
 {
     public class LiskovSubstitutionPrincipleBadExample
     {
-        public class SpecialCustomers
+        // derived classes should be perfectly substituatable for their base classes.
+
+        public class Apple
         {
-            List<Customer> list = new List<Customer>();
-
-            public virtual void AddCustomer(Customer obj)
-            {
-                list.Add(obj);
-            }
-
-            public int Count => list.Count;
+            public virtual string GetColor() => "Red";
         }
-
-        public class SuperSpecialCustomers : SpecialCustomers
+         
+        public class Orange : Apple
         {
-            private int max = 5;
-
-            public override void AddCustomer(Customer obj)
-            {
-                if (Count < max)
-                {
-                    base.AddCustomer(obj);
-                }
-                else
-                {
-                    throw new Exception("Bad stuff happens");
-                }
-
-
-            }
-        }
-
-        public class Customer
-        {
+            public override string GetColor() => "Orange";
         }
 
         [Fact]
-        public void ExampleBreakingSubstitutionPrinciple()
+        public void BadExample()
         {
-            try
-            {
-                SpecialCustomers sc = new SuperSpecialCustomers();
-                for (int i = 10; i >= 0; i--)
-                {
-                    Customer obj = new Customer();
-                    sc.AddCustomer(obj);
-                }
-            }
-            catch (Exception ex)
-            {
-                Assert.True(true);
-            }
+            Apple apple = new Orange();
+            apple.GetColor().ShouldBe("Red");
         }
     }
-
 }

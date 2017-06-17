@@ -14,6 +14,7 @@ namespace IoC
         // }
 
         private readonly Dictionary<Type, Type> _dependancyMap = new Dictionary<Type, Type>();
+
         public T Resolve<T>()
         {
             return (T) Resolve(typeof(T));
@@ -40,9 +41,7 @@ namespace IoC
             var constructorParameters = firstConstructor.GetParameters();
             if (constructorParameters.Length != 0)
                 return firstConstructor.Invoke(
-                    constructorParameters.Select(
-                        parametersInfo => Resolve(parametersInfo.ParameterType)
-                    ).ToArray()
+                    constructorParameters.Select(parametersInfo => Resolve(parametersInfo.ParameterType)).ToArray()
                 );
             return Activator.CreateInstance(resolveType);
         }

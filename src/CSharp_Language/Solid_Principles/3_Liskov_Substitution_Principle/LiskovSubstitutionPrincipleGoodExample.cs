@@ -7,57 +7,28 @@ namespace CSharp_Language.Solid_Principles._3_Liskov_Substitution_Principle
 {
     public class LiskovSubstitutionPrincipleGoodExample
     {
-        public class SpecialCustomers
+        public abstract class Fruit
         {
-            List<Customer> list = new List<Customer>();
-
-            public virtual void AddCustomer(Customer obj)
-            {
-                list.Add(obj);
-            }
-
-            public int Count => list.Count;
+            public abstract string GetColor();
         }
 
-        public class SuperSpecialCustomers : SpecialCustomers
+        public class Apple : Fruit
         {
-            private int max = 5;
-
-            public override void AddCustomer(Customer obj)
-            {
-                if (Count < max)
-                {
-                    base.AddCustomer(obj);
-                }
-                else
-                {
-                    throw new Exception("Bad stuff happens");
-                }
-
-
-            }
+            public override string GetColor() => "Red";
         }
 
-        public class Customer
+        public class Orange : Fruit
         {
+            public override string GetColor() => "Orange";
         }
 
         [Fact]
-        public void ExampleBreakingSubstitutionPrinciple()
+        public void GoodExample()
         {
-            try
-            {
-                SpecialCustomers sc = new SuperSpecialCustomers();
-                for (int i = 10; i >= 0; i--)
-                {
-                    Customer obj = new Customer();
-                    sc.AddCustomer(obj);
-                }
-            }
-            catch (Exception ex)
-            {
-                Assert.True(true);
-            }
+            Fruit apple = new Apple();
+            apple.GetColor().ShouldBe("Red");
+            Fruit orange = new Orange();
+            orange.GetColor().ShouldBe("Orange");
         }
     }
 

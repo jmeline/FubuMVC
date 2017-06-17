@@ -1,3 +1,4 @@
 xunit
 xunit.runner.console
 xunit.runner.utility
+structuremap
