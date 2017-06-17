@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Shouldly;
 using StructureMap;
 using Xunit;
@@ -169,6 +172,7 @@ namespace IoC.Tests
         public interface ICareer { }
         public class Bum : ICareer { }
         public class SoftwareDeveloper : ICareer { }
+        public class Doctor : ICareer { }
 
         public interface IWidget { }
         public class WidgetA : IWidget { }
@@ -190,6 +194,56 @@ namespace IoC.Tests
 
             container.GetInstance<ICareer>().ShouldBeOfType<Bum>();
             container.GetInstance<IWidget>().ShouldBeOfType<WidgetA>();
+        }
+
+        [Fact]
+        public void ProfileExample()
+        {
+            // profiles are named child containers
+            var container = new Container(_ =>
+            {
+                _.For<ICareer>().Use<SoftwareDeveloper>();
+                _.Profile("MyProfile", p =>
+                {
+                    _.For<ICareer>().Use<Bum>();
+                    _.For<IWidget>().Use<WidgetA>();
+                });
+            });
+
+            var profile = container.GetProfile("MyProfile");
+            profile.GetInstance<ICareer>().ShouldBeOfType<Bum>();
+            profile.GetInstance<IWidget>().ShouldBeOfType<WidgetA>();
+        }
+
+        [Fact]
+        public void EnumerationExample()
+        {
+            // if you specify a enumeration and you haven't overridden 
+            // an enumeration within structure map, you can have structure map
+            // give you an enumerable list of items in the exact order they were provided
+            var container = new Container(_ =>
+            {
+                _.For<ICareer>().Add<Bum>();
+                _.For<ICareer>().Add<SoftwareDeveloper>();
+                _.For<ICareer>().Add<Doctor>();
+            });
+            var careersIList = container.GetInstance<IList<ICareer>>();
+            var careersIEnumerable = container.GetInstance<IEnumerable<ICareer>>();
+            var careersList = container.GetInstance<List<ICareer>>();
+            var careersICollection = container.GetInstance<ICollection<ICareer>>();
+            var careersArray = container.GetInstance<ICareer[]>();
+            var counts = new List<int>
+            {
+                careersIList.Count,
+                careersList.Count,
+                careersIEnumerable.Count(),
+                careersICollection.Count,
+                careersArray.Length,
+            };
+            counts.Sum().ShouldBe(15);
+            careersIList[0].ShouldBeOfType<Bum>();
+            careersArray[1].ShouldBeOfType<SoftwareDeveloper>();
+            careersList[2].ShouldBeOfType<Doctor>();
         }
     }
 
