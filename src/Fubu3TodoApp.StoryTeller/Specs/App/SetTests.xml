@@ -1,0 +1,6 @@
+<Spec id="277305b3-0c19-48df-b019-0bd65b197927" maxRetries="0" tags="" lifecycle="Acceptance" name="SetTests" lastUpdated="Tuesday, June 20, 2017" expirationPeriod="0">
+  <Sets id="e3ce1538-9adb-42a1-8125-e7366bdad2ae">
+    <SetupColors colors="green, blue, yellow" />
+    <VerifyColors colors="green, blue, yellow" />
+  </Sets>
+</Spec>

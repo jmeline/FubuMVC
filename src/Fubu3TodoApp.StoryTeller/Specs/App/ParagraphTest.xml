@@ -1,0 +1,5 @@
+<Spec id="11b2c7e3-1bca-4dbb-83c0-ad77afffed5c" maxRetries="0" tags="" lifecycle="Acceptance" name="ParagraphTest" lastUpdated="Tuesday, June 20, 2017" expirationPeriod="0">
+  <Paragraph id="add82660-63c2-46bf-98a9-c22ab9c72c0e">
+    <LoginLogic name="bob" pass="jimmy" />
+  </Paragraph>
+</Spec>

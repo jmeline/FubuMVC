@@ -1,5 +1,6 @@
 #load "./cake-scripts/compile.cake"
 #load "./cake-scripts/paket.cake"
+#load "./cake-scripts/storyteller.csx"
 #tool "nuget:?package=xunit.runner.console"
 
 var target = Argument("target", "Default");

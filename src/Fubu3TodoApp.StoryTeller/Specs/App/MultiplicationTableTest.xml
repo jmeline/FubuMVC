@@ -1,0 +1,10 @@
+<Spec id="ed26489f-be57-49a9-abf4-1ec1bce42128" maxRetries="0" tags="" lifecycle="Acceptance" name="MultiplicationTableTest" lastUpdated="Tuesday, June 20, 2017" expirationPeriod="0">
+  <SampleSentence id="90d991c4-e00f-4f53-9c10-6492863f5dee">
+    <DetermineMultiplicationResult>
+      <result id="180e8ea4-bac0-437c-b07d-c2dbdb124765">
+        <DetermineMultiplicationResult-row a="1" b="2" result="2" />
+        <DetermineMultiplicationResult-row a="2" b="3" result="6" />
+      </result>
+    </DetermineMultiplicationResult>
+  </SampleSentence>
+</Spec>

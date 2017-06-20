@@ -1,0 +1,13 @@
+<Spec id="aa64344f-3a79-4884-9fd1-3dce7657e940" maxRetries="0" tags="" lifecycle="Regression" name="AdditionTest" lastUpdated="Tuesday, June 20, 2017" expirationPeriod="0">
+  <SampleSentence id="faefdda0-9143-4547-a9aa-197238076254">
+    <SetupState value1="5" value2="6" />
+    <VerifyValue returnValue="11" />
+    <DetermineAdditionResult>
+      <result id="dd3dd1c9-4836-475b-8b6e-5c8ff63b72e3">
+        <DetermineAdditionResult-row a="123" b="234" result="357" />
+        <DetermineAdditionResult-row a="12" b="20" result="32" />
+        <DetermineAdditionResult-row a="50" b="-20" result="30" />
+      </result>
+    </DetermineAdditionResult>
+  </SampleSentence>
+</Spec>

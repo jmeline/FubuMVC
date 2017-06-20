@@ -6,10 +6,4 @@ using System.Threading.Tasks;
 
 namespace Fubu3TodoApp.StoryTeller
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
 }

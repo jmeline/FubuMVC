@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Shouldly;
@@ -10,18 +9,25 @@ namespace IoC.Tests
 {
     public class NestedChildContainerTests
     {
+        public static bool isDisposed;
+        public static bool isCalled;
+
+        public enum LifeCycles 
+        {
+            Transient, 
+            Singleton,
+            ContainerScoped,
+            AlwaysUnique,
+        }
+
         public interface ITester
         {
             void Test();
         }
 
-        public static bool isDisposed;
-        public static bool isCalled;
         public class FoodTester : ITester, IDisposable
         {
-            public void Test()
-            {
-            }
+            public void Test() { }
 
             public void Dispose()
             {
@@ -60,13 +66,6 @@ namespace IoC.Tests
             }
         }
 
-        public enum LifeCycles 
-        {
-            Transient, 
-            Singleton,
-            ContainerScoped,
-            AlwaysUnique,
-        }
 
         [Fact]
         public void NestedContainerLifeCycleEffects()

@@ -52,8 +52,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BooleanLogic.cs" />
-    <Compile Include="Boxing_Unboxing.cs" />
+    <Compile Include="Computer Science Theory\BooleanLogic.cs" />
+    <Compile Include="Fundamentals\Boxing_Unboxing.cs" />
     <Compile Include="Computer Science Theory\DeclarationVsInitializationVsInstantiation.cs" />
     <Compile Include="Computer Science Theory\Recursion.cs" />
     <Compile Include="Fundamentals\Class_Struct.cs" />
@@ -71,12 +71,13 @@
     <Compile Include="Solid_Principles\3_Liskov_Substitution_Principle\LiskovSubstitutionPrincipleBadExample.cs" />
     <Compile Include="Solid_Principles\4_Interface_Segregation_Principle\InterfaceSegregationPrincipleBadExample.cs" />
     <Compile Include="Solid_Principles\4_Interface_Segregation_Principle\InterfaceSegregationPrincipleGoodExample.cs" />
-    <Compile Include="StructureMap\RegistriesTest.cs" />
+    <Compile Include="StructureMap\NestedChildContainerTests.cs" />
+    <Compile Include="StructureMap\RegistryDSL.cs" />
     <Compile Include="Testing\Stub\Fib\Fib.cs" />
     <Compile Include="Testing\Stub\Fib\FibTester.cs" />
     <Compile Include="Testing\Stub\Fib\IFib.cs" />
     <Compile Include="Testing\Stub\MailSender\AddressBookTest.cs" />
-    <Compile Include="StringInterpolation.cs" />
+    <Compile Include="Fundamentals\StringInterpolation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Solid_Principles\5_Dependency_Inversion_Principle\" />
