@@ -6,18 +6,18 @@ using FubuMVC.Core.ServiceBus.Configuration;
 using Shouldly;
 using Xunit;
 
-namespace Fubu3TodoApp.Transportation
+namespace FTApplication.Transportation
 {
     public class HelloWorld
     {
         [Fact]
-        public async Task send_and_recieve()
+        public async Task request_reply_example()
         {
             var pinger = FubuRuntime.For<PingApp>();
             var ponger = FubuRuntime.For<PongApp>();
             var bus = pinger.Get<IServiceBus>();
 
-            PongMessage pong = await bus.Request<PongMessage>(new PingMessage {Message = "ping"});
+            PongMessage pong = await bus.Request<PongMessage>(new PingMessage { Message = "ping" });
             PingMessage ping = await bus.Request<PingMessage>(pong);
             pong.Message.ShouldBe("pong");
             ping.Message.ShouldBe("ping");
@@ -26,20 +26,14 @@ namespace Fubu3TodoApp.Transportation
         }
 
         [Fact]
-        public async Task send_and_recieve2()
+        public void fire_and_forget_example()
         {
             var pinger = FubuRuntime.For<PingApp>();
             var ponger = FubuRuntime.For<PongApp>();
             var bus = pinger.Get<IServiceBus>();
 
             // Publish a Message
-            bus.Send(new PingMessage {Message = "ping"});
-
-            // Request/Reply
-            PongMessage pong = await bus.Request<PongMessage>(new PingMessage {Message = "You've been pinged"});
-
-            // "Delay" Send
-            bus.DelaySend(pong, TimeSpan.FromMilliseconds(1));
+            bus.Send(new PingMessage { Message = "ping" });
 
             pinger.Dispose();
             ponger.Dispose();
@@ -68,8 +62,8 @@ namespace Fubu3TodoApp.Transportation
         {
             Console.WriteLine("Recieved pong message: " + pong.Message);
             return pong.Message == "pong"
-                ? new PingMessage {Message = "ping" }
-                : new PingMessage {Message = string.Empty };
+                ? new PingMessage { Message = "ping" }
+                : new PingMessage { Message = string.Empty };
         }
     }
 
@@ -88,7 +82,8 @@ namespace Fubu3TodoApp.Transportation
     {
         public PingApp()
         {
-            AlterSettings<TransportSettings>(_ => _.InMemoryTransport = InMemoryTransportMode.AllInMemory);
+            // option to restrict testing to in memory only
+            //AlterSettings<TransportSettings>(_ => _.InMemoryTransport = InMemoryTransportMode.AllInMemory);
             // configuring PingApp to send PingMessage's
             // to the Pong App
             Channel(x => x.Ponger)
@@ -103,10 +98,11 @@ namespace Fubu3TodoApp.Transportation
 
     public class PongApp : FubuTransportRegistry<HelloWorldSettings>
     {
-       // listen for incoming messages from "Ponger" 
+        // option to restrict testing to in memory only
+        // listen for incoming messages from "Ponger" 
         public PongApp()
         {
-            AlterSettings<TransportSettings>(_ => _.InMemoryTransport = InMemoryTransportMode.AllInMemory);
+            //AlterSettings<TransportSettings>(_ => _.InMemoryTransport = InMemoryTransportMode.AllInMemory);
             Channel(x => x.Ponger)
                 .ReadIncoming();
         }
