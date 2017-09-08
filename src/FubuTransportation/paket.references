@@ -1,0 +1,11 @@
+FubuCore
+FubuMVC.Core
+FubuMVC.Razor
+FubuMVC.LightningQueues
+Microsoft.AspNet.Razor
+Newtonsoft.Json
+structuremap
+Shouldly
+xunit
+xunit.runner.console
+xunit.runner.utility

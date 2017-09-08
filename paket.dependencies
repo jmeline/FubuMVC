@@ -1,8 +1,9 @@
-framework: >= net45
+#framework: >= net45
 source https://nuget.org/api/v2
 
 nuget FubuCore 2.0.1.321
-nuget FubuMVC.Core 3.0.2
+nuget FubuMVC.Core 3.1.0
+nuget FubuMVC.LightningQueues 3.1.1
 nuget FubuMVC.Razor 3.0.1.2355
 nuget HtmlTags 2.1.0.183
 nuget Microsoft.AspNet.Razor 2.0.30506
