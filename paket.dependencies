@@ -9,7 +9,7 @@ nuget HtmlTags 2.1.0.183
 nuget Microsoft.AspNet.Razor 2.0.30506
 nuget Marten 2.1.0
 nuget Moq 4.7.99
-nuget Npgsql >= 3.2.5
+nuget Npgsql 3.2.5.0
 nuget Bottles 2.2.0.610
 nuget Newtonsoft.Json 9.0.1
 nuget Shouldly 

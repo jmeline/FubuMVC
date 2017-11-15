@@ -24,10 +24,10 @@ namespace Fubu3TodoApp.Settings
             {
                 a.Applies.ToThisAssembly();
                 // Endpoint is defaulted
-                //a.IncludeClassesSuffixedWithEndpoint();
+                a.IncludeClassesSuffixedWithEndpoint();
 
                 // Flexibility to change 
-                a.IncludeTypesNamed(x => x.EndsWith("example"));
+                //a.IncludeTypesNamed(x => x.EndsWith("example"));
                 a.IncludeClassesSuffixedWithController();
             });
 
