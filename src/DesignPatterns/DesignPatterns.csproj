@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\AdapterTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\StructuralExample.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
