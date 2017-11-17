@@ -23,7 +23,7 @@ namespace CSharp_Language.Solid_Principles._3_Liskov_Substitution_Principle
         public void BadExample()
         {
             Apple apple = new Orange();
-            apple.GetColor().ShouldBe("Red");
+            apple.GetColor().ShouldBe("Orange");
         }
     }
 }
