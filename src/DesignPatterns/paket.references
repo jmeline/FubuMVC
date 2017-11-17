@@ -1,0 +1,6 @@
+Moq
+Shouldly
+structuremap
+xunit
+xunit.runner.console
+xunit.runner.utility
