@@ -50,13 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Creational Patterns\Singleton\Singleton.cs" />
+    <Compile Include="Creational Patterns\Singleton\SingletonTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\AdapterTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\StructuralExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Patterns\" />
-    <Folder Include="Creational Patterns\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
