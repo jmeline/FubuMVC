@@ -3,7 +3,6 @@ using Xunit;
 
 namespace DesignPatterns.Creational_Patterns.Singleton
 {
-    
     public class SingletonTests
     {
         private class Test1 { }
