@@ -1,5 +1,4 @@
 ﻿
-
 namespace DesignPatterns.Creational_Patterns.Factory
 {
     public class Factory
@@ -21,7 +20,7 @@ namespace DesignPatterns.Creational_Patterns.Factory
 
         public IAuto GetCar(string carName)
         {
-            AutoFactory factory = new AutoFactory();
+            var factory = new CarFactory();
             return factory.CreateInstance(carName);
         }
     }

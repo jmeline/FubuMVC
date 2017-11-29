@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="Creational Patterns\Abstract Factory\AbstractFactory.cs" />
     <Compile Include="Creational Patterns\Factory\AudiTTS.cs" />
-    <Compile Include="Creational Patterns\Factory\AutoFactory.cs" />
+    <Compile Include="Creational Patterns\Factory\CarFactory.cs" />
     <Compile Include="Creational Patterns\Factory\BMW335Xi.cs" />
     <Compile Include="Creational Patterns\Factory\Factory.cs" />
     <Compile Include="Creational Patterns\Factory\FactoryTests.cs" />
