@@ -50,7 +50,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Creational Patterns\Singleton\Singleton.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\AbstractFactory.cs" />
+    <Compile Include="Creational Patterns\Factory\AudiTTS.cs" />
+    <Compile Include="Creational Patterns\Factory\AutoFactory.cs" />
+    <Compile Include="Creational Patterns\Factory\BMW335Xi.cs" />
+    <Compile Include="Creational Patterns\Factory\Factory.cs" />
+    <Compile Include="Creational Patterns\Factory\FactoryTests.cs" />
+    <Compile Include="Creational Patterns\Factory\IAuto.cs" />
+    <Compile Include="Creational Patterns\Factory\MiniCooper.cs" />
+    <Compile Include="Creational Patterns\Factory\NullCar.cs" />
+    <Compile Include="Creational Patterns\Singleton\VariousImplementationsOfSingleton.cs" />
     <Compile Include="Creational Patterns\Singleton\SingletonTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\AdapterTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\StructuralExample.cs" />
