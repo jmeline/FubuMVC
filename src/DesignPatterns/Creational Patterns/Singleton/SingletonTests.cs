@@ -10,8 +10,8 @@ namespace DesignPatterns.Creational_Patterns.Singleton
         [Fact]
         public void Test1IsASingleton()
         {
-            var s1 = Singleton<Test1>.Instance();
-            var s2 = Singleton<Test1>.Instance();
+            var s1 = NaiveNotThreadSafeBadSingletonExample<Test1>.Instance();
+            var s2 = NaiveNotThreadSafeBadSingletonExample<Test1>.Instance();
             if (s1 != s2)
             {
                 Assert.False(true);
