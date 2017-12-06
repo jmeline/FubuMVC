@@ -53,7 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Creational Patterns\Abstract Factory\AbstractFactory.cs" />
-    <Compile Include="Creational Patterns\Abstract Factory\UnitTest1.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\AbstractFactoryTests.cs" />
     <Compile Include="Creational Patterns\Factory\FactoryMethod\FactoryTest.cs" />
     <Compile Include="Creational Patterns\Factory\FactoryMethod\IAutoFactory.cs" />
     <Compile Include="Creational Patterns\Factory\FactoryMethod\MiniCooperFactory.cs" />
