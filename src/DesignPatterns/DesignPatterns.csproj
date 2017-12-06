@@ -45,20 +45,31 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="Creational Patterns\Abstract Factory\AbstractFactory.cs" />
-    <Compile Include="Creational Patterns\Factory\AudiTTS.cs" />
-    <Compile Include="Creational Patterns\Factory\CarFactory.cs" />
-    <Compile Include="Creational Patterns\Factory\BMW335Xi.cs" />
-    <Compile Include="Creational Patterns\Factory\Factory.cs" />
-    <Compile Include="Creational Patterns\Factory\FactoryTests.cs" />
-    <Compile Include="Creational Patterns\Factory\IAuto.cs" />
-    <Compile Include="Creational Patterns\Factory\MiniCooper.cs" />
-    <Compile Include="Creational Patterns\Factory\NullCar.cs" />
+    <Compile Include="Creational Patterns\Abstract Factory\UnitTest1.cs" />
+    <Compile Include="Creational Patterns\Factory\FactoryMethod\FactoryTest.cs" />
+    <Compile Include="Creational Patterns\Factory\FactoryMethod\IAutoFactory.cs" />
+    <Compile Include="Creational Patterns\Factory\FactoryMethod\MiniCooperFactory.cs" />
+    <Compile Include="Properties\settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\AudiTTS.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\CarFactory.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\BMW335Xi.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\Factory.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\FactoryTests.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\IAuto.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\MiniCooper.cs" />
+    <Compile Include="Creational Patterns\Factory\SimpleFactory\NullCar.cs" />
     <Compile Include="Creational Patterns\Singleton\VariousImplementationsOfSingleton.cs" />
     <Compile Include="Creational Patterns\Singleton\SingletonTests.cs" />
     <Compile Include="Structural Patterns\Adapter%28Wrapper%29\AdapterTests.cs" />
@@ -67,6 +78,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral Patterns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

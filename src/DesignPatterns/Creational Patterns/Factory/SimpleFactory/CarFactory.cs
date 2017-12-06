@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace DesignPatterns.Creational_Patterns.Factory
+namespace DesignPatterns.Creational_Patterns.Factory.SimpleFactory
 {
     public class CarFactory
     {

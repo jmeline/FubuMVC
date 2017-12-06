@@ -1,5 +1,5 @@
 ﻿
-namespace DesignPatterns.Creational_Patterns.Factory
+namespace DesignPatterns.Creational_Patterns.Factory.SimpleFactory
 {
     public class Factory
     {
