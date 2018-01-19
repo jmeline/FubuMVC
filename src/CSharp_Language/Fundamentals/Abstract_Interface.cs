@@ -4,7 +4,7 @@ using Xunit;
 
 namespace CSharp_Language.Fundamentals
 {
-    public class Abstract_Interface
+    public class AbstractInterface
     {
         public interface IDemo
         {

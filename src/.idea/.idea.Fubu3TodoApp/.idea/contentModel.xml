@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_Fubu3TodoApp.-1887337545.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Bottles" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BottleOneFubuPackageRegistry.cs" t="Include" />
+        <e p="Bottles.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CQRS_EventSourcing" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CQRS_EventSourcing.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="CSharp_Language" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Computer Science Theory" t="Include">
+          <e p="BooleanLogic.cs" t="Include" />
+          <e p="DeclarationVsInitializationVsInstantiation.cs" t="Include" />
+          <e p="Recursion.cs" t="Include" />
+          <e p="ValueAndReferenceTypes.cs" t="Include" />
+        </e>
+        <e p="CSharp_Language.csproj" t="IncludeRecursive" />
+        <e p="Fundamentals" t="Include">
+          <e p="3_StaticVsNonStatic.cs" t="Include" />
+          <e p="Abstract_Interface.cs" t="Include" />
+          <e p="Boxing_Unboxing.cs" t="Include" />
+          <e p="Class_Struct.cs" t="Include" />
+          <e p="ExtensionMethodsTests.cs" t="Include" />
+          <e p="Field_Property.cs" t="Include" />
+          <e p="LinqTesting.cs" t="Include" />
+          <e p="Readonly_Const.cs" t="Include" />
+          <e p="StringInterpolation.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Solid_Principles" t="Include">
+          <e p="1_Single_Responsibility_Principle" t="Include">
+            <e p="SingleResponsibilityBadExample.cs" t="Include" />
+            <e p="SingleResponsibilityGoodExample.cs" t="Include" />
+          </e>
+          <e p="2_Open_Closed_Principle" t="Include">
+            <e p="CalculatingAreaBadExample.cs" t="Include" />
+            <e p="CalculatingAreaGoodExample.cs" t="Include" />
+          </e>
+          <e p="3_Liskov_Substitution_Principle" t="Include">
+            <e p="LiskovSubstitutionPrincipleBadExample.cs" t="Include" />
+            <e p="LiskovSubstitutionPrincipleGoodExample.cs" t="Include" />
+          </e>
+          <e p="4_Interface_Segregation_Principle" t="Include">
+            <e p="InterfaceSegregationPrincipleBadExample.cs" t="Include" />
+            <e p="InterfaceSegregationPrincipleGoodExample.cs" t="Include" />
+          </e>
+          <e p="5_Dependency_Inversion_Principle" t="Include" />
+        </e>
+        <e p="StructureMap" t="Include">
+          <e p="NestedChildContainerTests.cs" t="Include" />
+          <e p="RegistryDSL.cs" t="Include" />
+        </e>
+        <e p="Testing" t="Include">
+          <e p="Stub" t="Include">
+            <e p="Fib" t="Include">
+              <e p="Fib.cs" t="Include" />
+              <e p="FibTester.cs" t="Include" />
+              <e p="IFib.cs" t="Include" />
+            </e>
+            <e p="MailSender" t="Include">
+              <e p="AddressBookTest.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="DesignPatterns" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="Behavioral Patterns" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Creational Patterns" t="Include">
+          <e p="Abstract Factory" t="Include">
+            <e p="AbstractFactory.cs" t="Include" />
+            <e p="AbstractFactoryTests.cs" t="Include" />
+          </e>
+          <e p="Factory" t="Include">
+            <e p="FactoryMethod" t="Include">
+              <e p="FactoryTest.cs" t="Include" />
+              <e p="IAutoFactory.cs" t="Include" />
+              <e p="MiniCooperFactory.cs" t="Include" />
+            </e>
+            <e p="SimpleFactory" t="Include">
+              <e p="AudiTTS.cs" t="Include" />
+              <e p="BMW335Xi.cs" t="Include" />
+              <e p="CarFactory.cs" t="Include" />
+              <e p="Factory.cs" t="Include" />
+              <e p="FactoryTests.cs" t="Include" />
+              <e p="IAuto.cs" t="Include" />
+              <e p="MiniCooper.cs" t="Include" />
+              <e p="NullCar.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Singleton" t="Include">
+            <e p="SingletonTests.cs" t="Include" />
+            <e p="VariousImplementationsOfSingleton.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DesignPatterns.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="settings.Designer.cs" t="Include" />
+          <e p="settings.settings" t="Include" />
+        </e>
+        <e p="Structural Patterns" t="Include">
+          <e p="Adapter(Wrapper)" t="Include">
+            <e p="AdapterTests.cs" t="Include" />
+            <e p="StructuralExample.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FTApplication" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FTApplication.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Transportation" t="Include">
+          <e p="HelloWorld" t="Include">
+            <e p="HelloWorld.cs" t="Include" />
+            <e p="HelloWorldSettings.cs" t="Include" />
+            <e p="PingPongApp.cs" t="Include" />
+            <e p="PingPongHandlers.cs" t="Include" />
+            <e p="PingPongMessage.cs" t="Include" />
+            <e p="PongHandler.cs" t="Include" />
+          </e>
+          <e p="Messages" t="Include">
+            <e p="Messages.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Fubu3TodoApp" t="IncludeRecursive">
+        <e p="Behaviors" t="Include">
+          <e p="SayGoodbye.cs" t="Include" />
+          <e p="SayHello.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="js" t="Include">
+            <e p="app.jsx" t="Include" />
+            <e p="components" t="Include">
+              <e p="homePage.jsx" t="Include" />
+              <e p="navigation.jsx" t="Include" />
+              <e p="todo.jsx" t="Include" />
+            </e>
+            <e p="containers" t="Include">
+              <e p="home.jsx" t="Include" />
+            </e>
+            <e p="styles.js" t="Include" />
+          </e>
+          <e p="less" t="Include">
+            <e p="general.less" t="Include" />
+            <e p="home.less" t="Include" />
+            <e p="navigation.less" t="Include" />
+            <e p="variables.less" t="Include" />
+          </e>
+        </e>
+        <e p="Endpoints" t="Include">
+          <e p="Food" t="Include">
+            <e p="FoodEndpoint.cs" t="Include" />
+            <e p="FoodViewModel.cs" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="Home.cshtml" t="Include" />
+            <e p="HomeEndpoint.cs" t="Include" />
+            <e p="HomeViewModel.cs" t="Include" />
+          </e>
+          <e p="Todo" t="Include">
+            <e p="TodoEndpoint.cs" t="Include" />
+            <e p="TodoViewModel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Fubu3TodoApp.csproj" t="IncludeRecursive" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Localization" t="Include">
+          <e p="Food.cs" t="Include" />
+          <e p="FoodDescriptionToken.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Settings" t="Include">
+          <e p="FubuJsonSerializationSettings.cs" t="Include" />
+          <e p="FubuTodoRegistry.cs" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Fubu3TodoApp.Data" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Fubu3TodoApp.Data.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Fubu3TodoApp.sln" t="IncludeFlat" />
+      <e p="Fubu3TodoApp.StoryTeller" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Fixtures" t="Include">
+          <e p="EmbeddedSections.cs" t="Include" />
+          <e p="ParagraphFixture.cs" t="Include" />
+          <e p="SampleSentenceFixture.cs" t="Include" />
+          <e p="SetsFixture.cs" t="Include" />
+        </e>
+        <e p="Fubu3TodoApp.StoryTeller.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="IoC" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ICreditCard.cs" t="Include" />
+        <e p="IoC.csproj" t="IncludeRecursive" />
+        <e p="IoC.sln" t="Include" />
+        <e p="MasterCard.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resolver.cs" t="Include" />
+        <e p="Shopper.cs" t="Include" />
+        <e p="Visa.cs" t="Include" />
+      </e>
+      <e p="IoC.Tests" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IoC.Tests.csproj" t="IncludeRecursive" />
+        <e p="NestedChildContainerTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="ShopperTest.cs" t="Include" />
+        <e p="SimpleRegistration.cs" t="Include" />
+      </e>
+      <e p="MartenConnectorTester" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MartenConnectorTester.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Performance Review" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CSharp_keywords" t="Include">
+          <e p="Default.cs" t="Include" />
+          <e p="Params.cs" t="Include" />
+        </e>
+        <e p="CSharp_topics" t="Include">
+          <e p="CovarianceAndContravariance" t="Include">
+            <e p="CovarianceAndContravariance.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Performance Review.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

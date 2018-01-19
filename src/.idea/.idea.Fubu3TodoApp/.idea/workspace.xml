@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2a47369-8f5c-4a5f-8283-875df24ba9cd" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Abstract_Interface.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/Abstract_Interface.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <marker date="1516378348000" expanded="false" signature="6:42" ph="..." />
+                <marker date="1516378348000" expanded="true" signature="82:1994" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="119:1992" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="156:492" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="179:446" ph="/* interfaces elements must be public ... */" />
+                <marker date="1516378348000" expanded="true" signature="523:571" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="677:786" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="717:775" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="831:978" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1018:1446" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1041:1192" ph="/* if something is abstract, it must be implemented ... */" />
+                <marker date="1516378348000" expanded="true" signature="1230:1341" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1376:1436" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1482:1647" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1530:1637" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1695:1844" ph="{...}" />
+                <marker date="1516378348000" expanded="true" signature="1892:1986" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3_StaticVsNonStatic.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/3_StaticVsNonStatic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <marker date="1516379265000" expanded="true" signature="52:197" ph="{...}" />
+                <marker date="1516379265000" expanded="true" signature="89:195" ph="{...}" />
+                <marker date="1516379265000" expanded="true" signature="147:180" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceSegregationPrincipleBadExample.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleBadExample.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceSegregationPrincipleGoodExample.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleGoodExample.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NestedChildContainerTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/StructureMap/NestedChildContainerTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddressBookTest.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CSharp_Language/Testing/Stub/MailSender/AddressBookTest.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+              <folding>
+                <marker date="1516377949000" expanded="false" signature="7:107" ph="..." />
+                <marker date="1516377949000" expanded="true" signature="158:1937" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="191:262" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="297:403" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="448:828" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="538:609" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="666:721" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="772:822" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="862:1935" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="930:1420" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="1058:1141" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="1486:1929" ph="{...}" />
+                <marker date="1516377949000" expanded="true" signature="1830:1876" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/Testing/Stub/MailSender/AddressBookTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/Abstract_Interface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleBadExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleGoodExample.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/StructureMap/NestedChildContainerTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/3_StaticVsNonStatic.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CSharp_Language/Fundamentals/Abstract_Interface.cs" />
+        <option value="$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleBadExample.cs" />
+        <option value="$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleGoodExample.cs" />
+        <option value="$PROJECT_DIR$/CSharp_Language/Fundamentals/3_StaticVsNonStatic.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1898" />
+    <option name="y" value="52" />
+    <option name="width" value="603" />
+    <option name="height" value="664" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Fubu3TodoApp (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Fubu3TodoApp (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CSharp_Language" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Fubu3TodoApp (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CSharp_Language" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Fundamentals" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2a47369-8f5c-4a5f-8283-875df24ba9cd" name="Default" comment="" />
+      <created>1516378100905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516378100905</updated>
+      <workItem from="1516378102100" duration="1319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1319000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1898" y="52" width="603" height="664" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293919" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9831081" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51077944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleBadExample.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/Solid_Principles/4_Interface_Segregation_Principle/InterfaceSegregationPrincipleGoodExample.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/StructureMap/NestedChildContainerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/Testing/Stub/MailSender/AddressBookTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <marker date="1516377949000" expanded="false" signature="7:107" ph="..." />
+            <marker date="1516377949000" expanded="true" signature="158:1937" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="191:262" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="297:403" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="448:828" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="538:609" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="666:721" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="772:822" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="862:1935" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="930:1420" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="1058:1141" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="1486:1929" ph="{...}" />
+            <marker date="1516377949000" expanded="true" signature="1830:1876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/Abstract_Interface.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <marker date="1516378348000" expanded="false" signature="6:42" ph="..." />
+            <marker date="1516378348000" expanded="true" signature="82:1994" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="119:1992" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="156:492" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="179:446" ph="/* interfaces elements must be public ... */" />
+            <marker date="1516378348000" expanded="true" signature="523:571" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="677:786" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="717:775" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="831:978" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1018:1446" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1041:1192" ph="/* if something is abstract, it must be implemented ... */" />
+            <marker date="1516378348000" expanded="true" signature="1230:1341" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1376:1436" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1482:1647" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1530:1637" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1695:1844" ph="{...}" />
+            <marker date="1516378348000" expanded="true" signature="1892:1986" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSharp_Language/Fundamentals/3_StaticVsNonStatic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <marker date="1516379265000" expanded="true" signature="52:197" ph="{...}" />
+            <marker date="1516379265000" expanded="true" signature="89:195" ph="{...}" />
+            <marker date="1516379265000" expanded="true" signature="147:180" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

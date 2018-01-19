@@ -1,9 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Xunit;
 
 namespace CSharp_Language.Solid_Principles._4_Interface_Segregation_Principle
 {
-    [TestClass]
     public class InterfaceSegregationPrincipleGoodExample
     {
         // example of a thin contract
@@ -38,7 +36,7 @@ namespace CSharp_Language.Solid_Principles._4_Interface_Segregation_Principle
             }
         }
 
-        [TestMethod]
+        [Fact]
         public void TestMethod1()
         {
         }
