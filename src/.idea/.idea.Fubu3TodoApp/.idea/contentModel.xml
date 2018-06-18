@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_Fubu3TodoApp.-1887337545.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Fubu3TodoApp.-1887337545.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Bottles" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -35,14 +35,17 @@
         <e p="CSharp_Language.csproj" t="IncludeRecursive" />
         <e p="Fundamentals" t="Include">
           <e p="3_StaticVsNonStatic.cs" t="Include" />
+          <e p="6_Advanced_Interfaces_Explicit.cs" t="Include" />
           <e p="Abstract_Interface.cs" t="Include" />
           <e p="Boxing_Unboxing.cs" t="Include" />
-          <e p="Class_Struct.cs" t="Include" />
+          <e p="Enums.cs" t="Include" />
           <e p="ExtensionMethodsTests.cs" t="Include" />
           <e p="Field_Property.cs" t="Include" />
           <e p="LinqTesting.cs" t="Include" />
           <e p="Readonly_Const.cs" t="Include" />
           <e p="StringInterpolation.cs" t="Include" />
+          <e p="Struct.cs" t="Include" />
+          <e p="ValueAndReferenceTypes.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />

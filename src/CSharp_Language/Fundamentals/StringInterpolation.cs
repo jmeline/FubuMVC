@@ -4,7 +4,7 @@ using Shouldly;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace CSharp_Language
+namespace CSharp_Language.Fundamentals
 {
     public class StringInterpolation
     {
