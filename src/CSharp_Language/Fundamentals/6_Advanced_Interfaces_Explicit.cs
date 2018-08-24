@@ -10,6 +10,7 @@ namespace CSharp_Language.Fundamentals
     {
         class Example : ITest1, ITest2
         {
+            // implicitly implemented
             public string GetValue() => "GetValue";
         }
 
@@ -17,9 +18,9 @@ namespace CSharp_Language.Fundamentals
         public void InvokesSameMethod()
         {
             var stubbedValue = "GetValue";
-            Example example = new Example();
-            ITest1 test1 = (ITest1) example;
-            ITest2 test2= (ITest2) example;
+            var example = new Example();
+            ITest1 test1 = example;
+            ITest2 test2 = example;
             
             example.GetValue().ShouldBe(stubbedValue); // prints "GetValue"
             test1.GetValue().ShouldBe(stubbedValue);   // prints "GetValue"
@@ -43,6 +44,7 @@ namespace CSharp_Language.Fundamentals
     {
         private class Example : IWork, ILive
         {
+            // explicitly implemented
             string IWork.Do() => "I Work";
             string ILive.Do() => "I Live";
         }
@@ -50,15 +52,14 @@ namespace CSharp_Language.Fundamentals
         [Fact]
         public void InvokesEachMethodSeparatelyDespiteHavingTheSameSignature()
         {
-            Example example = new Example();
-            IWork w = (IWork) example;
-            ILive l = (ILive) example;
+            var example = new Example();
+            IWork w = example;
+            ILive l = example;
             
             // example.Do() doesn't exist because of explicit implementation.
             w.Do().ShouldBe("I Work");
             l.Do().ShouldBe("I Live");
         }
-        
         
         private interface IWork
         {

@@ -87,6 +87,7 @@
     <Compile Include="Computer Science Theory\ValueAndReferenceTypes.cs" />
     <Compile Include="Fundamentals\3_StaticVsNonStatic.cs" />
     <Compile Include="Fundamentals\6_Advanced_Interfaces_Explicit.cs" />
+    <Compile Include="Fundamentals\BitwiseOperators.cs" />
     <Compile Include="Fundamentals\Boxing_Unboxing.cs" />
     <Compile Include="Computer Science Theory\DeclarationVsInitializationVsInstantiation.cs" />
     <Compile Include="Computer Science Theory\Recursion.cs" />

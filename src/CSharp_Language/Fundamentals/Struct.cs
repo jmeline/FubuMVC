@@ -1,5 +1,7 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.Security.AccessControl;
 using System.Security.Permissions;
 using Castle.Core.Smtp;
 using Shouldly;
@@ -179,8 +181,8 @@ namespace CSharp_Language.Fundamentals
         public class SampleClass
         {
             public int Value { get; set; }
-        } 
-        
+        }
+
         [Fact]
         public void TestStruct()
         {
@@ -225,5 +227,93 @@ namespace CSharp_Language.Fundamentals
             @class.Value.ShouldBe(20);
         }
 
+        struct Point2 : IEquatable<Point2>
+        {
+            public string Value;
+            public string Id;
+
+            public Point2(string id, string value)
+            {
+                Id = id;
+                Value = value;
+            }
+
+            public static bool operator ==(Point2 pt, Point2 pt2)
+            {
+                return pt.Id == pt2.Id && pt.Value == pt2.Value;
+            }
+
+            public static bool operator !=(Point2 pt, Point2 pt2)
+            {
+                return !(pt == pt2);
+            }
+
+            public bool Equals(Point2 other)
+            {
+                return string.Equals(Value, other.Value) && string.Equals(Id, other.Id);
+            }
+
+            public override bool Equals(object obj)
+            {
+                if (ReferenceEquals(null, obj)) return false;
+                return obj is Point2 && Equals((Point2) obj);
+            }
+
+            public override int GetHashCode()
+            {
+                unchecked
+                {
+                    return ((Value != null ? Value.GetHashCode() : 0) * 397) ^ (Id != null ? Id.GetHashCode() : 0);
+                }
+            }
+        }
+
+        public class Id
+        {
+            public Id(string value)
+            {
+                this.value = value;
+            }
+            private string value { get; set; }
+        }
+        
+        struct Test2
+        {
+
+            public Id _internalValue;
+
+            public Test2(string id)
+            {
+                _internalValue = new Id(id);
+            }
+
+            public bool Equals(Test2 obj)
+            {
+                return _internalValue.Equals(obj._internalValue);
+            }
+        }
+        
+        [Fact]
+        public void TestingEqualityOfStructs()
+        {
+            Point1 point = new Point1(10, 20);
+            Point1 point2 = new Point1(10, 20);
+            Assert.True(point.Equals(point2)); // this equality works because it is comparing value types
+            // Assert.True(point == point2);
+            
+            Test2 t = new Test2("a");
+            Test2 t3 = new Test2("a");
+            Test2 t2 = new Test2("b");
+            
+            Assert.True(t.Equals(t3));
+            
+            
+//            Point2 point2_1 = new Point2("ID:A", "B");
+//            Point2 point2_2 = new Point2("ID:A", "B");
+//            Assert.Equal(point2_1, point2_2);
+//            
+//            Assert.True(point2_1 == point2_2);
+        }
     }
+
 }
